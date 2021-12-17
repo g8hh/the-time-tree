@@ -12,12 +12,13 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.1",
-	name: "The Journey Begins",
+	num: "0.2",
+	name: "A Little Bit Faster",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<br><h3>v0.1 : The Journey Begins ( December 15th )</h3><br>`
+    <br><h3>v0.2 : A Little Bit Faster ( December 18th )</h3><br>
+	<br><h3>v0.1 : The Journey Begins ( December 17th )</h3><br>`
 
 let winText = `Congratulations! You reached the end of this update!<br>
               Unfortunately, this is the end of the game...for now`
@@ -54,7 +55,7 @@ var displayThings = [
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.p.points.gte("1e10") && hasUpgrade("t", 12)
+	return hasUpgrade("t", 14)
 }
 
 
