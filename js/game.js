@@ -427,6 +427,7 @@ setInterval(function() {needCanvasUpdate = true}, 500)
 
 function TimeUpgradePurchase() {
 	for(layer in ROW_LAYERS[0]) layerDataReset(layer)
+	for(layer in ROW_LAYERS[1]) layerDataReset(layer)
 	player.t.points = new Decimal(0)
 	player.points = new Decimal(0)
 }
