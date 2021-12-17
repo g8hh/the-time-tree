@@ -185,7 +185,7 @@ addLayer("p", {
         11: {
             title: "P",
             description: "Points boost point gain",
-            cost() { return new Decimal(100) },
+            cost() { return new Decimal(50) },
             unlocked() { return player.p.unlocked || hasUpgrade("p", 11) },
             effect() { 
 				eff = new Decimal(player.p.points.add(1).log10().add(1))
@@ -196,7 +196,7 @@ addLayer("p", {
         12: {
             title: "O",
             description: "Time boosts point gain",
-            cost() { return new Decimal(1000) },
+            cost() { return new Decimal(500) },
             unlocked() { return player.p.unlocked || hasUpgrade("p", 12) },
             effect() { 
 				eff = new Decimal(player.points.add(1).log10().add(1).log10().add(1).pow(3))
@@ -207,7 +207,7 @@ addLayer("p", {
         13: {
             title: "I",
             description: "Unlock a point buyable",
-            cost() { return new Decimal(2500) },
+            cost() { return new Decimal(1000) },
             unlocked() { return player.p.unlocked || hasUpgrade("p", 13) },
         },
         14: {
